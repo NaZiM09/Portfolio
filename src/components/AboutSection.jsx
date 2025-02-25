@@ -66,7 +66,7 @@ export default function AboutSection() {
             {/* القسم الخاص بالصورة */}
             <div className="mr-20 mt-40">
                 <img
-                    src="public/pictures/image.png"
+                    src="/public/pictures/image.png"
                     alt="Benalia Nazim"
                     className="rounded-full shadow-xl"
                     style={{ width: "329px", height: "307px" }}
