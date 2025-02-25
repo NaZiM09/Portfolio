@@ -41,7 +41,7 @@ export default function ProjectsSection() {
                 My Projects
             </h1>
 
-            {/* عرض المشاريع */}
+           
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-10">
                 {projects.map((project, index) => (
                     <div
@@ -49,8 +49,7 @@ export default function ProjectsSection() {
                         className="relative bg-white/10 backdrop-blur-md p-6 rounded-3xl shadow-2xl w-[320px] text-center border border-white/20"
                       
                     >
-                        {/* صورة المشروع */}
-                        <div className="overflow-hidden rounded-xl">
+                      <div className="overflow-hidden rounded-xl">
                             <img 
                                 src={project.image} 
                                 alt={project.title} 
@@ -58,13 +57,13 @@ export default function ProjectsSection() {
                             />
                         </div>
 
-                        {/* محتوى البطاقة */}
+               
                         <h2 className="text-xl font-semibold mt-5">{project.title}</h2>
                         <p className="text-gray-300 mt-3 text-sm">{project.description}</p>
 
-                        {/* أزرار الروابط */}
+                   
                         <div className="mt-5 bottom-0 flex justify-center space-x-3">
-                            {/* زر عرض المشروع */}
+                          
                             <a 
                                 href={project.projectLink} 
                                 target="_blank"
@@ -74,7 +73,7 @@ export default function ProjectsSection() {
                                 View Project
                             </a>
 
-                            {/* زر GitHub مع الأيقونة */}
+                       
                             <a 
                                 href={project.githubLink} 
                                 target="_blank"
