@@ -6,7 +6,7 @@ const projects = [
    {
     "title": "University Management",
     "description": "A system that enables students to request various documents from their institution, track the status of their requests, and receive the documents upon approval. I work on the frontend using React and Tailwind CSS, and some parts of the backend using PHP.",
-    "image": "public/pictures/3.png",
+    "image": "/pictures/3.png",
     "projectLink": "https://www.university-management.website/",
     "githubLink": "https://github.com/mohamed123127/University-management"
 }
@@ -14,7 +14,7 @@ const projects = [
     {
         "title": "Car Location System",
         "description": "A Vehicle Rental Management System allows managing the process of booking, tracking, and returning vehicles in a rental agency.",
-        "image": "public/pictures/Car-location.jpg",
+        "image": "/pictures/Car-location.jpg",
         "projectLink": "https://drive.google.com/drive/folders/1IuiwhtaxX5lQaGxilFcJmseirBP-usJH?usp=sharing",
         "githubLink": "https://github.com/mohamed123127/CarLocation"
     }
@@ -22,7 +22,7 @@ const projects = [
     {
         title: "Time-managemnt",
         description: "In progresse",
-        image: "public/pictures/time-management.png",
+        image: "/pictures/time-management.png",
         projectLink: "#",
         githubLink: "https://github.com/mohamed123127/Time-Management"
     }

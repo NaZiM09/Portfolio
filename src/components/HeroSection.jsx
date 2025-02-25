@@ -122,7 +122,7 @@ export default function HeroSection() {
       >
         <div className="w-72 h-72 rounded-full absolute bg-[hsla(266,100%,64%,0.4)] blur-3xl"></div>
         <img
-          src="public/pictures/me4.jpg"
+          src="/pictures/me4.jpg"
           alt="Benalia Nazim"
           className="rounded-full shadow-xl relative"
           style={{ width: "250px", height: "249.6543273925781px" }}
