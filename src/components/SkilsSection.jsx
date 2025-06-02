@@ -27,7 +27,7 @@ export default function SkillsSection() {
         <div className="flex flex-col ml-5 items-center mt-10 text-white">
            
             <motion.h1
-                className="text-[32px] jua-font font- mb-6"
+                className="text-[32px] jua-font  mb-6"
                 style={{  color: "hsla(266, 100%, 64%, 1)" }}
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
