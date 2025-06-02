@@ -35,7 +35,7 @@ export default function ContactSection() {
     };
 
     return (
-        <div className="flex flex-col items-center mt-20 text-white">
+        <div id="ContactSection" className="flex flex-col items-center mt-20 text-white">
 
         <h1
             className="text-[36px] font-normal jua-font mb-10"

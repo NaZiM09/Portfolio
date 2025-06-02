@@ -6,7 +6,7 @@ import SwingLoader from "./custom controls/pingo";
 
 export default function HeroSection() {
   return (
-    <section className="h-[560px] flex items-center px-12 bg-gradient-to-b">
+    <section id="HeroSection" className="h-[560px] flex items-center px-12 bg-gradient-to-b">
      
       <div className="flex-1  flex flex-col justify-center items-start">
         
@@ -78,7 +78,7 @@ export default function HeroSection() {
             <FaLinkedin />
           </a>
 
-          <a href="https://www.instagram.com/nazim____69/" target="_blank" rel="noopener noreferrer"
+          <a href="https://www.instagram.com/_naz___im/" target="_blank" rel="noopener noreferrer"
             className="text-[hsla(260,20%,86%,1)] hover:text-[hsla(266,100%,64%,1)] text-[40px] transition hover:scale-105">
             <FaInstagram />
           </a>
@@ -102,7 +102,7 @@ export default function HeroSection() {
 
   
       <a 
-       href="C:\Users\nazim\Desktop\home\web\Portfolio\nazim-portfolio\src\components\ProjectsSection.jsx" 
+       href="#ProjectsSection"
        className="px-6 py-3 text-[hsla(266,100%,53%,1)] bg-[hsla(261,57%,90%,1)] rounded-lg shadow-md 
        transition-all duration-300 hover:shadow-[0px_0px_20px_hsla(261,57%,90%,0.7)] hover:scale-105"
       >

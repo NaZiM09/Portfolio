@@ -1,35 +1,46 @@
+import { useState } from "react";
+import { Menu, X } from "lucide-react"; // أيقونات الهامبرغر والإغلاق
+
 const navLinks = [
-    { name: "Home", href: "/PrincipalePage" },
-    { name: "About", href: "" },
-    { name: "Projects", href: "/" },
-    { name: "Contacts", href: "/" },
-  ];
+  { name: "Home", href: "/PrincipalePage" },
+  { name: "About", href: "#AboutSection" },
+  { name: "Projects", href: "#ProjectsSection" },
+  { name: "Contacts", href: "#ContactSection" },
+];
 
 export default function Navbar() {
-    return (
-    <nav className="flex justify-between items-center px-8 py-4 absolute top-2  w-full">
-       
-       <div className="text-[hsla(261,20%,85%,1)] hover:text-[hsla(260,57%,65%,1)] text-xl font-bold jua-font">
-       Portfolio
-       </div>
+  const [isOpen, setIsOpen] = useState(false); // التحكم في القائمة
 
-  
-       {/* الروابط */}
-        <div
-        className="flex space-x-12 bg-transparent px-4 py-2 rounded-md backdrop-blur-md"
-        style={{ width: 574, height: 45, paddingTop: 8, paddingRight: 16, paddingBottom: 8, paddingLeft: 16 }}
-        >  
-       {navLinks.map((link) => (
-        <a
-          key={link.name}
-          href={link.href} 
-          className="px-4 py-2 rounded-md transition duration-300 text-[hsla(261,20%,85%,1)] hover:text-[hsla(260,57%,65%,1)] jua-font"
-        >
-          {link.name}
-        </a>
-          ))}
-       </div>
-      </nav>
-    );
-  }
-  
+  return (
+    <nav className="flex justify-between items-center px-8 py-4 absolute top-2 w-full">
+    
+      <div className="text-[hsla(261,20%,85%,1)] hover:text-[hsla(260,57%,65%,1)] text-xl font-bold jua-font">
+        Portfolio
+      </div>
+
+      <button
+        className="md:hidden text-white focus:outline-none"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        {isOpen ? <X size={28} /> : <Menu size={28} />}
+      </button>
+
+   
+      <div
+        className={`md:flex space-x-12 bg-transparent px-4 py-2 rounded-md backdrop-blur-md 
+        ${isOpen ? "absolute top-16 left-0 w-full flex flex-col items-center bg-black/90 py-4 space-y-4" : "hidden md:flex"}`}
+      >
+        {navLinks.map((link) => (
+          <a
+            key={link.name}
+            href={link.href}
+            className="px-4 py-2 rounded-md transition duration-300 text-[hsla(261,20%,85%,1)] hover:text-[hsla(260,57%,65%,1)] jua-font"
+            onClick={() => setIsOpen(false)}
+          >
+            {link.name}
+          </a>
+        ))}
+      </div>
+    </nav>
+  );
+}

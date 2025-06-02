@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 export default function AboutSection() {
     return (
-        <div className="relative flex items-center justify-between mb-10">
+        <div id="AboutSection" className="relative flex flex-col md:flex-row items-center justify-center md:justify-between mb-10 px-4 md:px-16">
             {/* القسم الخاص بالمحتوى النصي */}
-            <div>
+            <div >
                 <motion.div 
                     initial={{ opacity: 0, x: -50 }} 
                     animate={{ opacity: 1, x: 0 }} 

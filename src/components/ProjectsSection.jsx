@@ -7,7 +7,7 @@ const projects = [
     "title": "University Management",
     "description": "A system that enables students to request various documents from their institution, track the status of their requests, and receive the documents upon approval. I work on the frontend using React and Tailwind CSS, and some parts of the backend using PHP.",
     "image": "/pictures/3.png",
-    "projectLink": "https://www.university-management.website/",
+    "projectLink": "https://youtu.be/VmwNkOLk8Sc?si=paN_Tojrq1EXMFPr&t=266",
     "githubLink": "https://github.com/mohamed123127/University-management"
 }
 ,
@@ -23,14 +23,14 @@ const projects = [
         title: "Time-managemnt",
         description: "In progresse",
         image: "/pictures/time-management.png",
-        projectLink: "#",
-        githubLink: "https://github.com/mohamed123127/Time-Management"
+     // projectLink: "....",
+   //githubLink: "a..."
     }
 ];
 
 export default function ProjectsSection() {
     return (
-        <div className="flex flex-col items-center mt-20 text-white">
+        <div id="ProjectsSection" className="flex flex-col items-center mt-20 text-white">
             {/* العنوان */}
             <h1
                 className="text-[36px] font-normal jua-font  mb-10"
