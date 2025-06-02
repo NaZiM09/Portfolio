@@ -7,7 +7,7 @@ import ProjectsSection from './ProjectsSection'
 import ContactSection from './ContactSection'
 import Navbar from './Navbar'
 import AboutSection from './AboutSection'
-
+import Footer from './Footer'
 export default function Page() {
 
   
@@ -22,6 +22,7 @@ export default function Page() {
       <SkillsSection/>
       <ProjectsSection/>
       <ContactSection/>
+      <Footer/>
     </div>
     </>
   )

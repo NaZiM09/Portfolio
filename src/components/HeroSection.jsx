@@ -107,7 +107,7 @@ export default function HeroSection() {
           className="mt-8 flex flex-col sm:flex-row gap-4"
         >
           <a
-            href="src/pdf/CV.pdf"
+            href="/pdf/CV.pdf"
             download
             className="px-6 py-3 text-[hsla(261,57%,90%,1)] bg-[hsla(266,100%,53%,1)] rounded-lg shadow-md 
               transition-all duration-300 hover:shadow-[0px_0px_20px_hsla(266,100%,53%,0.7)] hover:scale-105 text-center"
