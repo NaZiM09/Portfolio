@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react"; // أيقونات الهامبرغر والإغلاق
 
 const navLinks = [
-  { name: "Home", href: "/PrincipalePage" },
+  { name: "Home", href: "#nav" },
   { name: "About", href: "#AboutSection" },
   { name: "Projects", href: "#ProjectsSection" },
   { name: "Contacts", href: "#ContactSection" },
@@ -12,7 +12,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false); // التحكم في القائمة
 
   return (
-    <nav className="flex justify-between items-center px-8 py-4 absolute top-2 w-full">
+    <nav id="nav" className="flex justify-between items-center px-8 py-4 absolute top-2 w-full">
     
       <div className="text-[hsla(261,20%,85%,1)] hover:text-[hsla(260,57%,65%,1)] text-xl font-bold jua-font">
         Portfolio
