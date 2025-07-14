@@ -36,7 +36,15 @@ export default function Navbar() {
             key={link.name}
             href={link.href}
             className="px-4 py-2 rounded-md transition duration-300 text-[hsla(261,20%,85%,1)] hover:text-[hsla(260,57%,65%,1)] jua-font"
-            onClick={() => setIsOpen(false)}
+           onClick={e => {
+              e.preventDefault();
+              setIsOpen(false);
+              const targetId = link.href.replace('#', '');
+              const target = document.getElementById(targetId);
+              if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
           >
             {link.name}
           </a>
