@@ -8,8 +8,8 @@ export default function Footer() {
         {/* Left: Contact Info */}
         <div>
           <p className="text-lg font-semibold">Benalia Nazim</p>
-          <p className="text-sm">Web Developer</p>
-          <p className="text-sm">Email: nazim@example.com</p>
+          <p className="text-sm">software engineer</p>
+          <p className="text-sm">Email: nazimbenalia09@gmail.com</p>
         </div>
 
         {/* Divider (Optional line or spacing) */}

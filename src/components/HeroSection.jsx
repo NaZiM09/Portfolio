@@ -21,8 +21,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-[24px] leading-[30px] jua-font font-normal"
-            style={{ color: "hsla(260, 20%, 86%, 1)" }}
+              className="text-[24px] leading-[30px] jua-font font-normal text-[hsla(260,20%,86%,1)] dark:text-[hsla(266,100%,64%,1)]"
           >
             Hello! I am
           </motion.h2>
@@ -31,8 +30,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="text-[24px] leading-[30px] jua-font font-normal"
-            style={{ color: "hsla(266, 100%, 64%, 1)" }}
+              className="text-[24px] leading-[30px] jua-font font-normal text-[hsla(266,100%,64%,1)] dark:text-[hsla(260,20%,86%,1)]"
           >
             Benalia Nazim
           </motion.h1>
@@ -42,8 +40,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="mt-4 text-[18px] jua-font leading-[28px] font-normal max-w-lg"
-          style={{ color: "hsla(260, 20%, 86%, 1)" }}
+            className="mt-4 text-[18px] jua-font leading-[28px] font-normal max-w-lg text-[hsla(260,20%,86%,1)] dark:text-[hsla(266,100%,64%,1)]"
         >
           Hi, I'm{" "}
           <span style={{ color: "hsla(266, 100%, 64%, 1)" }} className="jua-font">
@@ -61,7 +58,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.8 }}
-          className="mt-6 flex space-x-6"
+            className="mt-6 flex space-x-6 text-black dark:text-white"
         >
           <a
             href="https://github.com/NaZiM09"
@@ -104,7 +101,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1 }}
-          className="mt-8 flex flex-col sm:flex-row gap-4"
+            className="mt-8 flex flex-col sm:flex-row gap-4 text-black dark:text-white"
         >
           <a
             href="/pdf/CV.pdf"
@@ -130,13 +127,14 @@ export default function HeroSection() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
-        className="flex-1 flex justify-center items-center relative mb-10 md:mb-0"
+        className="flex-1 flex justify-end items-center relative mb-10 md:mb-0 px-0 sm:px-8 lg:px-16"
       >
-        <div className="w-60 h-60 md:w-72 md:h-72 rounded-full absolute bg-[hsla(266,100%,64%,0.4)] blur-3xl"></div>
+        <div className="w-60 h-60 md:w-72 md:h-72 rounded-full absolute bg-[hsla(266,100%,64%,0.4)] blur-3xl right-0"></div>
         <img
           src="/pictures/me4.jpg"
           alt="Benalia Nazim"
           className="rounded-full shadow-xl relative w-[180px] h-[180px] sm:w-[220px] sm:h-[220px] md:w-[250px] md:h-[250px] lg:w-[300px] lg:h-[300px]"
+          style={{ marginRight: 0 }}
         />
       </motion.div>
     </section>
