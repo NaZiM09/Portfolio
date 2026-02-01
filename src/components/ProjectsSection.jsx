@@ -11,6 +11,30 @@ const projects = [
     "githubLink": "https://github.com/mohamed123127/University-management"
 }
 ,
+{
+    "title": "Portfolio Platform",
+    "description": "A personal portfolio website built with React and Tailwind CSS. It showcases my projects, skills, and experience in a visually appealing and user-friendly manner.",
+    "image": "/pictures/oert.png",
+    "projectLink": "https://nazim-benalia-portfolio.vercel.app/",
+    "githubLink": "https://github.com/mohamed123127/University-management"
+}
+,
+{
+    "title": "Smart Pâtisserie Managementt",
+    "description": "Sesto Senso is a bakery management tool that enables owners to track stock, orders, and sales analytics in real-time. Developed using Elictron, Tailwind CSS, and sQLite, it provides a professional desktop interface to streamline daily operations and financial growth..",
+    "image": "/pictures/sesto.png",
+    "projectLink": "https://youtu.be",
+    "githubLink": "https://github.com/nazimbenalia/Platforme-d-Optimisation-des-Emplois-du-Temps-d-Examens-/"
+}
+,
+{
+    "title": "University ExamFlow",
+    "description": "This system automates university exam scheduling, allowing admins to generate +1500 exames without problems  timetables for 13K+ students in seconds. I built the frontend with React and Tailwind CSSand for backend , i used pyhton fast api and  mySQL, creating a high-speed dashboard that manages surveillance and room data efficiently.",
+    "image": "/pictures/edt.png",
+    "projectLink": "https://platforme-d-optimisation-des-emploi-ten.vercel.app",
+    "githubLink": "https://github.com/nazimbenalia/Platforme-d-Optimisation-des-Emplois-du-Temps-d-Examens-/"
+}
+,
     {
         "title": "Car Location System",
         "description": "A Vehicle Rental Management System allows managing the process of booking, tracking, and returning vehicles in a rental agency.",
@@ -88,4 +112,8 @@ export default function ProjectsSection() {
             </div>
         </div>
     );
+
+
+
+    
 }

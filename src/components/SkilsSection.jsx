@@ -1,33 +1,57 @@
-import { motion } from "framer-motion";
+import LogoLoop from './LogoLoop';
+import { motion } from "framer-motion"; 
 import {
-  FaReact, FaNodeJs, FaJs, FaCss3Alt, FaHtml5,
-  FaDatabase, FaGitAlt, FaJava
+  FaReact,
+  FaNodeJs,
+  FaJs,
+  FaCss3Alt,
+  FaHtml5,
+  FaDatabase,
+  FaGitAlt,
+  FaJava,
+  FaWpforms,
+  FaPython
 } from "react-icons/fa";
+
 import {
-  SiNextdotjs, SiTailwindcss, SiMongodb, SiC, SiCplusplus
+  SiNextdotjs,
+  SiTypescript,
+  SiTailwindcss,
+  SiMongodb,
+  SiC,
+  SiCplusplus,
+  SiElectron
 } from "react-icons/si";
 
-const skillsRow1 = [
-  { name: "Git", icon: <FaGitAlt size={50} color="#F05032" /> },
-  { name: "Java", icon: <FaJava size={50} color="#E76F00" /> },
-  { name: "C", icon: <SiC size={50} color="#A8B9CC" /> },
-  { name: "C++", icon: <SiCplusplus size={50} color="#00599C" /> },
+/* ===== Row 1 ===== */
+const techLogosRow1 = [
+  { node: <FaHtml5 className="text-orange-500" />, title: 'HTML' },
+  { node: <FaCss3Alt className="text-blue-500" />, title: 'CSS' },
+  { node: <FaJs className="text-yellow-400" />, title: 'JavaScript' },
+  { node: <FaReact className="text-cyan-400" />, title: 'React' },
+  { node: <SiNextdotjs className="text-black dark:text-white" />, title: 'Next.js' },
+  { node: <SiTypescript className="text-blue-600" />, title: 'TypeScript' },
+  { node: <SiElectron className="text-blue-200" />, title: 'Electron' },
+  { node: <SiTailwindcss className="text-sky-400" />, title: 'Tailwind CSS' },
 ];
 
-const skillsRow2 = [
-  { name: "React", icon: <FaReact size={50} color="#61DAFB" /> },
-  { name: "Next.js", icon: <SiNextdotjs size={50} color="#ffffff" /> },
-  { name: "JavaScript", icon: <FaJs size={50} color="#F7DF1E" /> },
-  { name: "Tailwind CSS", icon: <SiTailwindcss size={50} color="#38BDF8" /> },
-  { name: "Node.js", icon: <FaNodeJs size={50} color="#8CC84B" /> },
-  { name: "CSS3", icon: <FaCss3Alt size={50} color="#1572B6" /> },
-  { name: "HTML5", icon: <FaHtml5 size={50} color="#E34F26" /> },
-  { name: "Database", icon: <FaDatabase size={50} color="#FFA500" /> },
+
+const techLogosRow2 = [
+  
+  { node: <FaNodeJs className="text-green-500" />, title: 'Node.js' },
+  { node: <SiMongodb className="text-green-600" />, title: 'MongoDB' },
+  { node: <FaDatabase className="text-indigo-400" />, title: 'Database' },
+  { node: <FaGitAlt className="text-red-500" />, title: 'Git' },
+  { node: <FaJava className="text-red-600" />, title: 'Java' },
+  { node: <SiC className="text-blue-500" />, title: 'C' },
+  { node: <SiCplusplus className="text-blue-600" />, title: 'C++' },
+  { node: <FaWpforms className="text-blue-700" />, title: 'WordPress' },
+  { node: <FaPython className="text-yellow-600" />, title: 'Python' },
 ];
 
 export default function SkillsSection() {
   return (
-    <div className="flex flex-col items-center mt-10 text-white px-4">
+    <div className="h-[260px] mt-40 relative overflow-hidden space-y-6">
       <motion.h1
         className="text-[32px] jua-font mb-6 text-center"
         style={{ color: "hsla(266, 100%, 64%, 1)" }}
@@ -38,39 +62,31 @@ export default function SkillsSection() {
         My Skills
       </motion.h1>
 
-      <motion.div
-        className="flex flex-wrap justify-center gap-6 mb-6"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      >
-        {skillsRow1.map((skill) => (
-          <motion.div
-            key={skill.name}
-            whileHover={{ scale: 1.2 }}
-            transition={{ duration: 0.3 }}
-          >
-            {skill.icon}
-          </motion.div>
-        ))}
-      </motion.div>
+      {/* ===== First Row ===== */}
+      <LogoLoop
+        logos={techLogosRow1}
+        speed={120}
+        direction="left"
+        logoHeight={48}
+        gap={40}
+        scaleOnHover
+        fadeOut
+        ariaLabel="Frontend skills"
+      />
 
-      <motion.div
-        className="flex flex-wrap justify-center gap-6"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.3 }}
-      >
-        {skillsRow2.map((skill) => (
-          <motion.div
-            key={skill.name}
-            whileHover={{ scale: 1.2 }}
-            transition={{ duration: 0.3 }}
-          >
-            {skill.icon}
-          </motion.div>
-        ))}
-      </motion.div>
+      {/* ===== Second Row ===== */}
+      <LogoLoop
+        logos={techLogosRow2}
+        speed={120}
+        direction="right"
+        logoHeight={48}
+        gap={40}
+        scaleOnHover
+        fadeOut
+        ariaLabel="Backend & other skills"
+        
+      />
+
     </div>
   );
 }

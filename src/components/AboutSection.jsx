@@ -54,31 +54,40 @@ export default function AboutSection() {
           University.
         </span>
         <br /> <br />
-        <span>
-          What I Can Do
-          <br />
-          I specialize in building responsive and{" "}
-        </span>
-        <span style={{ color: "hsla(266, 100%, 64%, 1)" }}>
-          dynamic websites{" "}
-        </span>
-        <span>
-          using cutting-edge
-          <br />
-          technologies like{" "}
-        </span>
-        <span style={{ color: "hsla(266, 100%, 64%, 1)" }}>
-          React, Next.js, CSS, HTML,{" "}
-        </span>
-        <span>and </span>
-        <span style={{ color: "hsla(266, 100%, 64%, 1)" }}>PHP. </span>
-        <span>
-          With experience in both
-          <br />
-          frontend and backend development, I’m equipped to handle end-to-end
-          <br />
-          development tasks efficiently.
-        </span>
+       <span>
+  What I Can Do
+  <br />
+  I specialize in building responsive and dynamic websites using cutting-edge
+  technologies like{" "}
+</span>
+<span style={{ color: "hsla(266, 100%, 64%, 1)" }}>
+  React, Next.js, CSS, HTML, PHP, and Electron
+</span>
+<span>
+  . With experience in both frontend and backend development, I’m equipped to handle
+  end-to-end development tasks efficiently.
+  <br />
+  I also have experience building desktop applications using{" "}
+</span>
+<span style={{ color: "hsla(266, 100%, 64%, 1)" }}>
+  Electron + React
+</span>
+<span>
+  , and working with databases like{" "}
+</span>
+<span style={{ color: "hsla(266, 100%, 64%, 1)" }}>
+  MySQL, SQLite
+</span>
+<span>
+  . On the backend, I’m comfortable with{" "}
+</span>
+<span style={{ color: "hsla(266, 100%, 64%, 1)" }}>
+  Laravel and Python FastAPI
+</span>
+<span>
+  , allowing me to build robust and scalable applications.
+</span>
+
       </p>
     </div>
   </div>

@@ -1,6 +1,8 @@
 import { FaGithub, FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { motion } from "framer-motion";
-import Particles from "react-tsparticles";
+import Particles from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim";
+
 import SwingLoader from "./custom controls/pingo";
 
 export default function HeroSection() {
